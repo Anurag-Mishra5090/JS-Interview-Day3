@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+
+    <title>JS Day 3 Question</title>
+    <style>
+        pre {
+            background-color: white;
+            padding: 15px;
+            border: 3px solid grey;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+
+        body {
+            background-color: black;
+        }
+
+        p {
+            color: rgb(22, 232, 236);
+        }
+
+        h1 {
+            text-align: center;
+            color: aqua;
+            font-weight: bold;
+            font-size: 5em;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="page-header">JS Interview Day 3</h1>
+    <hr>
+    <div class="container-fluid">
+        <p><b>How many operators do we have in JS ?</b></p>
+        <pre>
+There are different types of JavaScript operators:
+Arithmetic Operators. =>   +,-,*,/,%
+Assignment Operators. =>   ++,--,+=,=+,-=,=- etc
+Comparison Operators. =>   ==,===,=>,>=,!=,?
+Logical Operators.    =>   &&, ||, !
+Conditional Operators. => if   else 
+
+
+    </pre>
+        <hr>
+
+        <p><b>What are arrow functions?</b></p>
+        <pre>
+It is denoted in the ES6 version.
+Left part denote the input function.
+Rght part denote the output function.
+
+ex:
+var sum=(a,b)=>{console.log(a+b);}
+sum(3,4)
+    </pre>
+        <hr>
+
+
+        <p><b>Difference between undefined vs not defined vs NaN</b></p>
+        <pre>
+            undefined : if variable exists in memory space but hasn't been assigned any value till now, then it would be undefined
+
+            not defined :If the variable name which is being accessed doesn't exist in memory space then it would be not defined
+
+            NaN : NaN stands for Not a Number. It represents a value which is not a valid number.
+
+    </pre>
+        <hr>
+
+        <p><b>What is callback hell</b></p>
+        <pre>
+        The nested multiple callbacks within a function is called a callback hell.
+        example:
+        setTimeout(() => {
+            console.log(1);
+            setTimeout(() => {
+                console.log(2);
+                setTimeout(() => {
+                    console.log(3);
+                    setTimeout(() => {
+                        console.log(4);
+                        setTimeout(() => {
+                            console.log(5);
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+
+    </pre>
+        <hr>
+
+        <p><b>Please explain Self Invoking Function and its code</b></p>
+        <pre>
+            A self-invoking (also called self-executing) function is a nameless (anonymous) function that is 
+            invoked immediately after its definition.
+            example:
+            (function(){
+                console.log('anurag')
+            })
+            ()
+    </pre>
+        <hr>
+
+
+        <p><b>What is the use of setTimeout</b></p>
+        <pre>
+            It execute after the given time will expire 
+            example:
+            setTimeout(()=>{
+                console.log('hello')
+            },1000)
+
+</pre>
+
+
+    </div>
+
+    <script>
+
+
+        // var sum=(a,b)=>{console.log(a+b);}
+        // sum(3,4)
+
+        // setTimeout(() => {
+        //         console.log(1);
+        //         setTimeout(() => {
+        //             console.log(2);
+        //             setTimeout(() => {
+        //                 console.log(3);
+        //                 setTimeout(() => {
+        //                     console.log(4);
+        //                     setTimeout(() => {
+        //                         console.log(5);
+        //                     }, 1000)
+        //                 }, 1000)
+        //             }, 1000)
+        //         }, 1000)
+        //     }, 1000)
+
+        // (function(){
+        //         console.log('anurag')
+        //     })
+        //     ()
+
+
+    </script>
+</body>
+
+</html> -->
